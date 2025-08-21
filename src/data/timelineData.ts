@@ -13,6 +13,30 @@ export const timePeriods: TimePeriod[] = [
     endYear: 2018,
     title: "Технологии",
   },
+  {
+    id: 3,
+    startYear: 2015,
+    endYear: 2022,
+    title: "Наука",
+  },
+  {
+    id: 4,
+    startYear: 2015,
+    endYear: 2022,
+    title: "Наука",
+  },
+  {
+    id: 5,
+    startYear: 2015,
+    endYear: 2022,
+    title: "Наука",
+  },
+  {
+    id: 6,
+    startYear: 2015,
+    endYear: 2022,
+    title: "Наука",
+  },
 ];
 
 export const historicalEvents: HistoricalEvent[] = [

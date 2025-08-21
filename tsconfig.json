@@ -9,7 +9,8 @@
       "@/styles/*": ["styles/*"],
       "@/utils/*": ["utils/*"],
       "@/types/*": ["types/*"],
-      "@/assets/*": ["assets/*"]
+      "@/assets/*": ["assets/*"],
+      "@/data/*": ["data/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
