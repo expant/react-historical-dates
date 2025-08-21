@@ -1,0 +1,12 @@
+.circle {
+  position: absolute;
+  top: 215px;
+  left: 0;
+  right: 0;
+  width: 536px;
+  height: 530px;
+  margin: auto;
+  border-radius: 50%;
+  border: 1px solid var(--line-color);
+  z-index: 100;
+}

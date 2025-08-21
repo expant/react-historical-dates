@@ -1,7 +1,12 @@
-import React from "react";
+import { MainLayout } from "./layouts/MainLayout/MainLayout";
+import { TimelineBlock } from "./TimelineBlock/TimelineBlock";
 
 function App() {
-  return <div></div>;
+  return (
+    <MainLayout>
+      <TimelineBlock />
+    </MainLayout>
+  );
 }
 
 export default App;
