@@ -4,8 +4,8 @@ import "./PeriodPoint.scss";
 
 export function PeriodPoint({
   position,
+  period,
   isCurrent,
-  children,
   onClick,
 }: PeriodPointProps) {
   const [isHovered, setIsHovered] = useState(false);
@@ -18,7 +18,7 @@ export function PeriodPoint({
 
   return (
     <div
-      className="point"
+      className={`point ${isHovered || isCurrent ? "active" : ""}`}
       style={{
         left: `calc(50% + ${x}px)`,
         top: `calc(50% + ${y}px)`,
@@ -27,7 +27,9 @@ export function PeriodPoint({
       onMouseLeave={() => (isCurrent ? null : setIsHovered(false))}
       onClick={handleOnClick}
     >
-      {(isCurrent || isHovered) && children}
+      {/* {(isCurrent || isHovered) && children} */}
+
+      {(isHovered || isCurrent) && <div>{period.id}</div>}
     </div>
   );
 }

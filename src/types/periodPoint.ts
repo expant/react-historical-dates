@@ -9,8 +9,9 @@ export type Period = {
 
 export type PeriodPointProps = {
   position: { x: number; y: number };
+  period: Period;
   isCurrent: Boolean;
-  children: ReactNode;
+  // children: ReactNode;
   onClick: () => void;
 };
 
