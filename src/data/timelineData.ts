@@ -17,25 +17,25 @@ export const timePeriods: TimePeriod[] = [
     id: 3,
     startYear: 2015,
     endYear: 2022,
-    title: "Наука",
+    title: "Кино",
   },
   {
     id: 4,
     startYear: 2015,
     endYear: 2022,
-    title: "Наука",
+    title: "Литература",
   },
   {
     id: 5,
     startYear: 2015,
     endYear: 2022,
-    title: "Наука",
+    title: "",
   },
   {
     id: 6,
     startYear: 2015,
     endYear: 2022,
-    title: "Наука",
+    title: "",
   },
 ];
 

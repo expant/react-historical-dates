@@ -1,0 +1,36 @@
+.point-tooltip {
+  position: absolute;
+  left: calc(-56px / 2);
+  top: calc(-56px / 2);
+
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 20px;
+  color: var(--title-color);
+
+  &-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: white;
+    border: 1px solid rgba(48, 62, 88, 0.5);
+  }
+
+  &-title {
+    font-weight: bold;
+  }
+}
+
+.point-tooltip:not(.current) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .point-tooltip-title {
+    display: none;
+  }
+}

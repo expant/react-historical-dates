@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type Period = {
   id: number;
   startYear: number;
@@ -7,6 +9,12 @@ export type Period = {
 
 export type PeriodPointProps = {
   position: { x: number; y: number };
+  isCurrent: Boolean;
+  children: ReactNode;
+  onClick: () => void;
+};
+
+export type PeriodPointTooltipProps = {
   period: Period;
   isCurrent: Boolean;
 };
